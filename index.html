@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Cecil Balugo Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background-color: #000; font-family: 'Arial', sans-serif; color: #fff; text-align: center; overflow-x: hidden; }
+    nav { background-color: deeppink; display: flex; justify-content: space-around; flex-wrap: wrap; padding: 12px 10px; font-weight: bold; position: fixed; width: 100%; top: 0; z-index: 10; }
+    nav a { color: white; text-decoration: none; font-size: 16px; transition: 0.3s; }
+    nav a:hover { text-decoration: underline; }
+    main { margin-top: 70px; min-height: 100vh; padding: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
+    section { display: none; animation: fadeIn 0.4s ease-in-out; }
+    section.active { display: block; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .home img { border-radius: 50%; width: 200px; height: 200px; object-fit: cover; border: 3px solid deeppink; margin: 20px 0; }
+    .home h1 { font-size: 1.4em; margin-bottom: 10px; }
+    .home p { font-size: 15px; line-height: 1.5; color: #ccc; padding: 0 10px; max-width: 600px; margin: auto; }
+    .projects-container { display: flex; flex-direction: column; align-items: center; gap: 20px; margin-top: 25px; width: 100%; }
+    .project-card { margin-top: 10px; background-color: rgba(255,255,255,0.2); width: 100%; max-width: 500px; border-radius: 10px; padding: 20px; box-shadow: 0 2px 6px rgba(255,255,255,0.2); }
+    .project-card img { width: 100%; height: auto; border-radius: 10px; }
+    .project-card p { margin-top: 10px; color: #fff; font-size: 14px; }
+    .sample-output { max-width: 500px; margin: 0 auto; }
+    .sample-output a { text-align: left; display: block; margin: 10px 0; color: lightskyblue; text-decoration: none; font-size: 16px; }
+    .sample-output a:hover { color: #fff; }
+    .sample-output h2 { text-align: left; }
+    .tutorials iframe { width: 100%; max-width: 500px; height: 200px; border-radius: 10px; margin: 15px auto; display: block; }
+    .tutorials p { color: deeppink; margin-top: 5px; }
+    footer { background-color: rgba(255,255,255,0.2); padding: 25px 15px; border-radius: 10px; margin: 20px auto; max-width: 500px; }
+    footer h2 { color: deeppink; margin-bottom: 15px; font-size: 18px; }
+    .social-icons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 20px; }
+    .social-icons img { width: 40px; height: 40px; border-radius: 6px; transition: 0.3s; }
+    .social-icons img:hover { transform: scale(1.1); }
+    textarea { width: 100%; max-width: 500px; height: 150px; border-radius: 8px; border: none; padding: 10px; margin-top: 10px; font-size: 14px; }
+    button { background-color: deeppink; border: none; border-radius: 8px; padding: 8px 20px; margin-top: 10px; color: white; cursor: pointer; font-weight: bold; }
+  </style>
+</head>
+
+<body>
+<nav>
+  <a href="#" onclick="showSection('home', event)">Home</a>
+  <a href="#" onclick="showSection('projects', event)">Projects</a>
+  <a href="#" onclick="showSection('tutorials', event)">Tutorials</a>
+  <a href="#" onclick="showSection('contact', event)">Contact</a>
+</nav>
+
+<main>
+<section id="home" class="home active">
+  <h1>Welcome to My Portfolio!</h1>
+  <img src="Messenger_creation_35A096E5-A174-4AB6-A839-11B3B882EDC5.jpeg">
+  <p>I'm <strong>Cecil Dela Cruz Balugo</strong>, a passionate student and I embrace technology, enjoy learning new skills, and love exploring new things that expand my knowledge and creativity. This portfolio showcases my projects, creativity, and growth throughout my learning journey. I aim to combine creativity and functionality in every work I create. Feel free to explore and see what I’ve been working on!</p>
+</section>
+
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <a href="https://drive.google.com/file/d/1-he4DmkAUxV8oewpM3ok2Ze1W9RpUpDa/view?usp=drivesdk">
+        <img src="Screenshot_20251020-153640~2.png">
+      </a>
+      <p>T-shirt Layout Design</p>
+    </div>
+    <div class="project-card">
+      <a href="https://drive.google.com/file/d/1eFfzbcuFhnvcAk7Z559KxUod0NZ2bIgu/view?usp=drivesdk">
+        <img src="Screenshot_20251020-153746~2.png">
+      </a>
+      <p>Product Design</p>
+    </div>
+    <div class="project-card">
+      <a href="https://www.figma.com/proto/Xee7CqGC4ImPdloNqXIrXo/Untitled">
+        <img src="1760950313237_045159.jpg">
+      </a>
+      <p>Celestea - Milktea E-commerce Website</p>
+    </div>
+  </div>
+
+  <div class="sample-output">
+    <h2><br><br>Sample Outputs</h2>
+    <a href="https://www.canva.com/design/DAGvda4WRMY/l-OvRczIO_x4JiytOWJSwA/edit">• Canva Portfolio</a>
+    <a href="https://www.figma.com/proto/2YsClPDM9xaGfyKHkqJZfg/Untitled">• Figma Portfolio</a>
+    <a href="https://drive.google.com/drive/folders/11Gq1KRh3_nTLupa0T8KkRUc2PleTbgMU">• Schematic Diagram</a>
+    <a href="https://www.figma.com/proto/u69rMyeQv36dKukTDdeokr/Untitled">• E-commerce Design</a>
+
+    <h2><br>Certificates & CV</h2>
+    <a href="https://drive.google.com/file/d/1VrEG4wExMspJh65rQcJLZgibnu21fb56/view?usp=drivesdk">•CV</a>
+    <a href="https://drive.google.com/file/d/1VT8GTxs5AvOzxIhDWknnpEtFcpaQv5sy/view?usp=drivesdk">• Certificate 1</a>
+    <a href="https://drive.google.com/file/d/1VRb1ttojvK-2QFRxAkNIiGp8GFn4Zu7S/view?usp=drivesdk">• Certificate 2</a>
+    <a href="https://drive.google.com/file/d/1VO_NQf2WLXacT_Hbj0f3rj1pAO8-0Gse/view?usp=drivesdk">• Certificate 3</a>
+  </div>
+</section>
+
+<section id="tutorials" class="tutorials">
+  <h2>Video Tutorials</h2>
+  <iframe src="https://www.youtube.com/embed/JuqDZgLxNiQ"></iframe>
+  <p>Photoshop</p>
+  <iframe src="https://www.youtube.com/embed/z7QVI2Ju98A"></iframe>
+  <p>Figma</p>
+  <iframe src="https://www.youtube.com/embed/10O-VOjb7xA"></iframe>
+  <p>Github</p>
+</section>
+
+<section id="contact">
+  <footer>
+    <h2>Contact Us</h2>
+    <div class="social-icons">
+      <img src="2021_Facebook_icon.svg.png">
+      <img src="2048px-Instagram_icon.png">
+      <img src="gmail-logo-on-transparent-white-background-free-vector.jpg">
+      <img src="c4198af08cbf6b66b043b30748676ade.jpg">
+    </div>
+    <p>Leave your message here:</p>
+    <textarea placeholder="Type your message..."></textarea><br>
+    <button>Send Message</button>
+  </footer>
+</section>
+</main>
+
+<script>
+function showSection(id, event) {
+  event.preventDefault();
+  document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+</script>
+</body>
+</html>
